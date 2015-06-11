@@ -4,4 +4,4 @@ applications:
   buildpack: go_buildpack
   memory: 256M
   instances: 1
-  command: bulk-importer --key="<orc_key>" --host="<orc_host>" <filename>
+  command: go run orcbulkimport.go --key="<orc_key>" --host="<orc_host>" <filename>
