@@ -1,7 +1,0 @@
----
-applications:
-- name: orchestrate-bulk-importer
-  buildpack: go_buildpack
-  memory: 256M
-  instances: 1
-  command: go run orcbulkimport.go --key="<orc_key>" --host="<orc_host>" <filename>

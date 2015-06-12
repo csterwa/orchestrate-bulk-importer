@@ -68,13 +68,6 @@ func main() {
 		}(file)
 	}
 
-	http.HandleFunc("/", hello)
-	fmt.Println("listening...")
-	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
-	if err != nil {
-		panic(err)
-	}
-
 	wg.Wait()
 	close(reqs)
 }
